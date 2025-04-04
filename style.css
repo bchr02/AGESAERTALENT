@@ -1,0 +1,66 @@
+/* General Resets */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  
+  /* Remove the old hero background image; 
+     we'll use a carousel for the hero now. */
+  
+  /* Hero Carousel Section */
+  #hero-section {
+    position: relative;
+    height: 100vh; /* Full viewport height for the carousel */
+    overflow: hidden;
+  }
+  #heroCarousel .carousel-inner .carousel-item {
+    height: 100vh; /* Each slide fills the viewport */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #heroCarousel .carousel-caption {
+    bottom: 25%; /* Move caption a bit higher if desired */
+  }
+  
+  /* About Section */
+  #about-section img {
+    object-fit: cover;
+  }
+  
+  /* Cards in Why Choose Us Section */
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer */
+  .footer-section {
+    text-align: center;
+  }
+  
+  /* Carousel Fade Animation (if using .carousel-fade) */
+  .carousel.fade .carousel-item {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  .carousel.fade .carousel-item.active {
+    opacity: 1;
+  }
+  
+  /* Media Queries (Optional) */
+  @media (max-width: 768px) {
+    #heroCarousel .carousel-caption {
+      bottom: 10%;
+    }
+  }
+  
+  .carousel-caption h1,    .carousel-caption p {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  }
